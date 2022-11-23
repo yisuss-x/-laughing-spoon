@@ -19,6 +19,7 @@ p{
 .imagen{
     width: 150px;
     margin-bottom: 20px
+    whid
 }
 .caja{
     font-family: 'Roboto';
@@ -41,3 +42,29 @@ p{
     color: gold;
     text-align: center;
 }
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 1.5em;
+    text-transform: uppercase; }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff0;
+    background: #f00;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 3px 3px #ff0; 
+} 
+/* botton que dio agus */
+/* button{
+    background-color: #47a386;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 2px 4px #0e0e0e;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+ */
