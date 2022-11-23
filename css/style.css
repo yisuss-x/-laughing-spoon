@@ -1,0 +1,43 @@
+body{
+    background-color: #0e0e0e;
+}
+h1,h2{
+    color: gold;
+    text-align: center
+}
+h1{
+    font-size: 48px;
+}
+h3{
+    font-weight: 900;
+    font-size: 32px;
+}
+p{
+    text-align: center;
+    color: white;
+}
+.imagen{
+    width: 150px;
+    margin-bottom: 20px
+}
+.caja{
+    font-family: 'Roboto';
+    background: rgb(93, 89, 35);
+    display: block;
+    border: 10px solid gold;
+    padding: 0%;
+    text-align: center;
+}
+
+.linkinfo{
+    text-decoration: none;
+    color: #0e0e0e;
+    padding: 5px;
+    border: 3px solid #0e0e0e;
+    border-radius: 5px;
+}
+.footer{
+    margin-top: 20px;
+    color: gold;
+    text-align: center;
+}
