@@ -1,70 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primario: #F4D03F;
+    --amarillo-claro: #ff0;
+    --color-text: #e0e0e0;
+    --bg-primario: #0e0e0e;
+    --bg-secundario: rgb(93, 89, 35);
+}
+/* GENERAL */
 body{
-    background-color: #0e0e0e;
-}
-h1,h2{
-    color: gold;
-    text-align: center
-}
-h1{
-    font-size: 48px;
-}
-h3{
-    font-weight: 900;
-    font-size: 32px;
+    background-color: var(--bg-primario);
+    font-family: 'Roboto';
 }
 p{
     text-align: center;
-    color: white;
+    color:var(--color-text);
+    size: 7px;
 }
-.imagen{
-    width: 150px;
-    margin-bottom: 20px
-    whid
+    /* NAV */
+.NavBar{
+    background: var(--bg-primario);
+    box-shadow: var(--color-primario) 0px 2px 4px, var(--color-primario) 0px 7px 13px -3px, var(--color-primario) 0px -3px 0px inset;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
 }
-.caja{
-    font-family: 'Roboto';
-    background: rgb(93, 89, 35);
-    display: block;
-    border: 10px solid gold;
-    padding: 0%;
-    text-align: center;
-}
-
-.linkinfo{
-    text-decoration: none;
-    color: #0e0e0e;
-    padding: 5px;
-    border: 3px solid #0e0e0e;
-    border-radius: 5px;
-}
-.footer{
-    margin-top: 20px;
-    color: gold;
-    text-align: center;
-}
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
-    color: #fff;
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link.active .navbar-dark .navbar-nav .show .nav-link {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: var(--color-primario);
+    margin: 15px;
     padding: 6px 10px;
     font-size: 1.5em;
-    text-transform: uppercase; }
-  
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #ff0;
-    background: #f00;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--amarillo-claro);
+    background: var(--bg-secundario);
     border-radius: 2rem;
     transition: all 0.5s;
     transform: scale(0.9);
-    box-shadow: 0px 0px 3px 3px #ff0; 
-} 
-/* botton que dio agus */
-/* button{
-    background-color: #47a386;
-    border-radius: 6px;
-    border: none;
-    box-shadow: 0 2px 4px #0e0e0e;
-    color: #ffffff;
-    font-size: 1em;
-    padding: 10px 25px;
-    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px var(--amarillo-claro); 
 }
- */
+    /* TITULOS Y SUBTITULOS */
+.titulos-principales{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-primario);
+}
+.titulos{
+    font-weight: bolder;
+    size: 10px;
+    text-shadow: 2px 2px 3px var(--color-text);
+}
+    /* IMAGENES */
+.foto-nav{
+    width: 55px;
+}
+.copa-index{
+    width: auto;
+    height: auto;
+}
+.contenedor-img{
+    width: 100%;
+    max-width: 900px;
+    height: 900px;
+    overflow: hidden;
+}
+.imagenes-caja{
+    width: 150px;
+    margin-bottom: 20px;
+}
+    /* CAJA */
+.caja{
+    background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../img/yuyito-de-cancha.jpg);
+    display: block;
+    padding: 0%;
+    text-align: center;
+    size: 900px;
+}
+.poster{
+    display: flex;
+}
+.linkinfo {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: var(--bg-primario);
+    background-color: var(--amarillo-claro);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgba(1, 1, 1, 0.601);
+  }
+.linkinfo:hover {background-color: var(--amarillo-claro)}
+  
+.linkinfo:active {
+    background-color: var(--color-primario);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
