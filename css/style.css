@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik:ital,wght@1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,18 +11,23 @@
     --color-text: #e0e0e0;
     --bg-primario: #0e0e0e;
     --bg-secundario: rgb(93, 89, 35);
+    --color-pag-contacto: rgba(143, 124, 1236, 0.7);
 }
 /* GENERAL */
 body{
     background-color: var(--bg-primario);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 p{
-    text-align: center;
     color:var(--color-text);
-    size: 7px;
+    size: 8px;
+    margin-right: 7%;
 }
     /* NAV */
+.fa-home-alt:before, .fa-home-lg-alt:before, .fa-home:before, .fa-house:before {
+    color:var(--color-primario);
+    width: 55px;
+}
 .NavBar{
     background: var(--bg-primario);
     box-shadow: var(--color-primario) 0px 2px 4px, var(--color-primario) 0px 7px 13px -3px, var(--color-primario) 0px -3px 0px inset;
@@ -53,8 +59,10 @@ p{
 }
 .titulos{
     font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+    color: var(--color-text);
     size: 10px;
-    text-shadow: 2px 2px 3px var(--color-text);
+    margin-left: 10% ;
 }
     /* IMAGENES */
 .foto-nav{
@@ -67,42 +75,186 @@ p{
 .contenedor-img{
     width: 100%;
     max-width: 900px;
-    height: 900px;
+    height: 650px;
     overflow: hidden;
 }
 .imagenes-caja{
     width: 150px;
-    margin-bottom: 20px;
+    margin:0 16px 20px 20%;
 }
     /* CAJA */
 .caja{
     background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../img/yuyito-de-cancha.jpg);
     display: block;
     padding: 0%;
-    text-align: center;
     size: 900px;
 }
-.poster{
+.bloques_index{
+    margin-top: 50px;
+    padding-top: 25px;
     display: flex;
+    flex-direction: row-reverse;
 }
-.linkinfo {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    text-align: center;	
-    text-decoration: none;
+.info-mundial{
+    max-width: 1200px;
+}
+    /* FORMULARIO DE CONTACTO */
+.login-box{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: var(--bg-primario);
+    box-shadow: 0 15px 25px var(--color-primario);
+}
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--color-text);
+    text-align: center;
+}
+.login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--color-text);
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 1px solid var(--color-text);
     outline: none;
-    color: var(--bg-primario);
-    background-color: var(--amarillo-claro);
+    background: transparent;
+}
+.login-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -50px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--color-text);
+    pointer-events: none;
+    transition: .5s;
+}
+.login-box .user-box input :focus~label,
+.login-box .user-box input :valid~label {
+    top: -85px;
+    left: 0;
+    color: var(--amarillo-claro);
+    font-size: 12px;
+}
+#submit{
+    padding: 10px 20px;
+    color: var(--color-text);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid var(--amarillo-claro);
+    margin: auto;
+    background-color: var(--bg-primario);
+}
+#submit :hover {
+    background: var(--amarillo-claro);
+    color: var(--color-text);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--amarillo-claro), 0 0 25px var(--amarillo-claro), 0 0 50px var(--amarillo-claro), 0 0 100px var(--amarillo-claro);
+}
+.button-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+    /* FUENTES */
+.aclaracion{
+    color: #f00;
+    text-align: center;
+    margin: 35px 0 30px;
+}
+.titulos-secundarios{
+    color: var(--color-primario);
+    padding: 20px;
+    border: 3px solid var(--amarillo-claro) ;
+    margin: 50px 7% 50px 7% ;
+}
+    /* VIDEOS */
+.grupo-videos{
+    display: flex;
+    justify-content: space-around;
+}
+.videos-link{
+    margin: 15px;
+}
+.fin{
+    margin-bottom: 50px;
+}
+    /* IMAGENES CON LINKS */
+.imagenes-fuentes{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.imagen-links{
+    margin-top: 20px;
+    width: 200px;
+    height: 180px;
+}
+    /* FOOTER */
+footer {
+    background-color: var(--bg-secundario);
+    color: var(--color-text);
+    font-size: 16px;
+}
+footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px rgba(1, 1, 1, 0.601);
-  }
-.linkinfo:hover {background-color: var(--amarillo-claro)}
-  
-.linkinfo:active {
-    background-color: var(--color-primario);
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    outline: none;
+}
+.row {
+    padding: 1em 1em;
+}
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 10em;
+}
+h3 {
+    width: 100%;
+    text-align: left;
+    color: var(--color-text);
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+.social i {
+    color: #bac6d9;
+} 
+.footer-menu{
+    float: left;
+    margin-top: 10px;
+}
+.footer-menu a{
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+}
+.footer-menu a:hover{
+    color: #27bcda;
 }
