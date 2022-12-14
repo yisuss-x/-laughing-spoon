@@ -23,6 +23,9 @@ p{
     size: 8px;
     margin-right: 7%;
 }
+.historia{
+    text-align: center;
+}
     /* NAV */
 .fa-home-alt:before, .fa-home-lg-alt:before, .fa-home:before, .fa-house:before {
     color:var(--color-primario);
